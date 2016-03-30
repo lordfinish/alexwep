@@ -1,0 +1,40 @@
+<form class="m-editor" id="meme-editor-view">
+  <div class="dropzone" id="dropzone">Arrastra la imagen aqui</div>
+  
+  <h2><label for="image-scale">tamaño de imagen</label></h2>
+  <input id="image-scale" type="range" max="4" min=".01" step=".01" value="1">
+  
+  <h2><label for="headline">titulo</label></h2>
+  <textarea id="headline" name="headline" type="text" value=""></textarea>
+  
+  <select class="text-align" id="text-align">
+    <option value="" disabled>elige la alineacion</option>
+  </select>
+
+  <select class="font-size" id="font-size">
+    <option value="" disabled>Selecciona tamaño de letra</option>
+  </select>
+
+  <select class="font-family" id="font-family">
+    <option value="" disabled>Selecciona una letra</option>
+  </select>
+
+  <div class="checkbox-group text-shadow">
+    <input id="text-shadow" name="shadow" type="checkbox"> 
+    <label for="text-shadow">Text Shadow</label>
+  </div>
+
+  <select class="watermark" id="watermark">
+    <option value="" disabled>Selecciona una marca</option>
+  </select>
+
+  <h2><label for="credit">creditos</label></h2>
+  <input id="credit" name="credit" type="text" value="">
+
+  <div class="m-editor__overlay" id="overlay">
+    <h2>Overlay Color</h2>
+    <ul class="checkbox-group">
+      <li><label><input type="radio" name="overlay" value=""> ninguna</label></li>
+    </ul>
+  </div>
+</form>
